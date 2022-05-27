@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>TAREA 1 - JSSM</title>
+
+</head>
+
+<body>
+    <!--comenzamos creando un navbar donde encontraremos varios apartados-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXCrHIe-x-j07bkPRFGjLeuGi_lXilxDXMc6eusKpS1BcTRuK6z4L1m30pgvrDggjUQa0&usqp=CAU"
+                width="100" height="60">
+            IMPORTADORA SELLAN
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Inicio <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Quienes somos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Tienda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contactanos</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Categoria
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Accesorios</a>
+                        <a class="dropdown-item" href="#">Cascos</a>
+                        <a class="dropdown-item" href="#">Escapes</a>
+                        <a class="dropdown-item" href="#">Espejos</a>
+                        <a class="dropdown-item" href="#">Guardafangos</a>
+                        <a class="dropdown-item" href="#">Lubricantes</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Sliders</a>
+                        <a class="dropdown-item" href="#">Repuestos</a>
+                        <a class="dropdown-item" href="#">Timones</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Buscar">
+                <button class="btn btn-dark my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
+        </div>
+    </nav>
+    <!--agregamos un salto de linea-->
+    <br><br>
+    <!--comenzamos a crear la parte del carrusel de fotos-->
+    <center>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-40"
+                        src="https://scontent.fuio14-1.fna.fbcdn.net/v/t1.6435-9/105034877_125272522547923_4144196685781298289_n.png?_nc_cat=107&ccb=1-7&_nc_sid=730e14&_nc_ohc=6MArzKCod_UAX_8uoJJ&_nc_ht=scontent.fuio14-1.fna&oh=00_AT87VAZIF7q_71PkJinIsvN6ENSImvh8Wd01nZG0Z2uyng&oe=62B4DC4B"
+                        alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-40"
+                        src="https://scontent.fuio14-1.fna.fbcdn.net/v/t1.6435-9/105019239_125271835881325_3197419039719727984_n.png?_nc_cat=105&ccb=1-7&_nc_sid=730e14&_nc_ohc=e1E3GQ9JGZ4AX9KdddR&_nc_ht=scontent.fuio14-1.fna&oh=00_AT86Jzvev4K_gfRfY9uwMJGsjVmpDiLjKB-2kYl1Ugr6PA&oe=62B52C28"
+                        alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-40"
+                        src="https://scontent.fuio14-1.fna.fbcdn.net/v/t1.6435-9/104931588_125271352548040_1255228159688743463_n.png?_nc_cat=110&ccb=1-7&_nc_sid=730e14&_nc_ohc=XJ_AHhfeqqMAX-6zdc6&_nc_ht=scontent.fuio14-1.fna&oh=00_AT8Uor3YCumdIJAJi9LQb07FksT9k0w7o0aIpinwv2V0JA&oe=62B5FA38"
+                        alt="Third slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
+        </div>
+    </center>
+    <br><br>
+
+    <!--Comenzamos a crear las cards-->
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
