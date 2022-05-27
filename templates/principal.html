@@ -9,7 +9,37 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+        <style>
+            /* Estilos para la disposición del pie de página */
+            .pie-pagina {
+                display: grid;
+                grid-template-columns: repeat(3, auto);
+                padding: 20px;
+                column-gap: 10px;
+            }
+    
+            /* Estilos para la disposición del menú de navegación */
+            .nav {
+                display: grid;
+                grid-template-rows: auto auto;
+            }
+    
+            /* Estilos para la disposición de la sección de contacto */
+            .contacto {
+                display: grid;
+                grid-template-rows: auto auto;
+            }
+    
+            /* Estilos para la disposición del formulario*/
+            .formulario {
+                grid-template-columns: repeat(2, auto);
+            }
+    
+            /* Estilos para el tamaño de las etiquetas de título h4*/
+            h4 {
+                font-size: 10px;
+            }
+        </style>
     <title>TAREA 1 - JSSM</title>
 
 </head>
@@ -113,13 +143,21 @@
                 Abierto hoy hasta las 18:00</p>
             <footer class="blockquote-footer">RECTIFICADORA<cite title="Source Title"> SELLAN</cite></footer>
           </blockquote>
-        </center>
 
+          <!--agregamos un boton-->
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Visitanos</h5>
+              <a href="#" class="btn btn-danger">Ir al mapa</a>
+            </div>
+          </div>
+        </center>
+<br><br>
     <!--Comenzamos a crear las cards-->
     <div class="card-group">
         <div class="card">
           <img class="card-img-top" src="https://http2.mlstatic.com/D_NQ_NP_869823-MEC49328282792_032022-W.jpg">
-          <div class="card-body bg-danger text-white">
+          <div class="card-body">
             <h5 class="card-title">Daytona Motocicleta Deportiva DY200 WOLF 200 CC
                 SKU: 106865
                 Se el primero en comentar este producto
@@ -151,7 +189,7 @@
           </div>
           <div class="card">
             <img class="card-img-top" src="https://http2.mlstatic.com/D_NQ_NP_869823-MEC49328282792_032022-W.jpg">
-            <div class="card-body bg-danger text-white">
+            <div class="card-body">
               <h5 class="card-title">Daytona Motocicleta Deportiva DY200 WOLF 200 CC
                   SKU: 106865
                   Se el primero en comentar este producto
@@ -166,7 +204,71 @@
             </div>
           </div>
       </div>
+      
+    <!-- pie de pagina general -->
+    <div class="pie-pagina">
 
+        <!-- Navegacion del pie de página -->
+        <div class="nav p-3 mb-2 bg-danger text-light">
+            <div>
+                <h2>Navegación </h2>
+            </div>
+
+            <div>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Quienes somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled text-light">Respuestos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Sección de contactos -->
+        <div class="contacto p-3 mb-2 bg-danger text-light">
+            <div>
+                <h2>Contáctanos</h2>
+            </div>
+
+            <div>
+                <h3 class="text-light">Teléfono</h3>
+                <h4>3828120 </h4>
+                <h3 class="text-light">Correo</h3>
+                <h4>alfaroesmil@gmail.com</h4>
+                <h3 class="text-light">Dirección</h3>
+                <h4 class="text-left">Av. Manuel Córdova Galarza
+                    (Parcayacu) vía a la Mitad del Mundo</h4>
+
+            </div>
+        </div>
+
+        <!-- Sección de formulario -->
+        <div class="formulario ">
+
+            <div>
+                <h2>Escríbenos</h2>
+            </div>
+
+            <div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Escríbenos</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
